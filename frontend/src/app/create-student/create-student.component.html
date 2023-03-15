@@ -1,0 +1,30 @@
+<div class="container-col-md-6">
+
+    <h3 style="color: red;"> Add Student Form </h3>
+
+    <form class="container" (ngSubmit)="addStudentData()">
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Student Id</label>
+            <input type="email" class="form-control" id="sid" name="sid" [(ngModel)]="student.sid">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Student Name</label>
+            <input type="email" class="form-control" id="sname" name="sname" [(ngModel)]="student.sname">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Student Email</label>
+            <input type="email" class="form-control" id="semail" name="semail" [(ngModel)]="student.semail">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Student PhoneNo</label>
+            <input type="email" class="form-control" id="sphone" name="sphone" [(ngModel)]="student.sphone">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register Student</button>
+
+
+
+    </form>
+
+</div>

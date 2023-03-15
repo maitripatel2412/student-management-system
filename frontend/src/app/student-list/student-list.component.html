@@ -1,0 +1,26 @@
+<table class="table table table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">SID</th>
+        <th scope="col">STUDENT_NAME</th>
+        <th scope="col">STUDENT_EMAIL</th>
+        <th scope="col">STUDENT_PHONE</th>
+        <th scope="col">ACTION</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of student">
+        <th>{{student.sid}}</th>
+        <td>{{student.sname}}</td>
+        <td>{{student.semail}}</td>
+        <td>{{student.sphone}}</td>
+        <td>
+            <button (click)="updateStudent(student.sid)" class="btn btn-info">UPDATE</button>
+
+            <button (click)="deleteStudent(student.sid)" class="btn btn-info">DELETE</button>
+
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
